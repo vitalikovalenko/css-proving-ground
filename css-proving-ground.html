@@ -1,0 +1,349 @@
+<!--
+
+CSS Proving Ground. Revision 1
+A HTML5 compliant CSS test site
+by Vitali Kovalenko
+http://vitalikovalenko.com
+
+--><!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en"><head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="follow, all" />
+<title>CSS Proving Ground</title>
+<style>
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0} */
+
+/* Here you can switch different elements of the page on and off */
+/* header { display: none; } */
+/* nav.top { display: none; } */
+/* aside { display: none; } */
+/* nav.bottom { display: none; } */
+/* footer { display: none; } */
+
+/* ####################     TEST YOUR CSS CODE HERE:     ################### */
+
+
+
+</style>
+</head>
+<body>
+<header>CSS Proving Ground</header>
+<nav class="top">
+<ol>
+<li><a href="#1">Introduction</a></li>
+<li><a href="#2">Page structure</a>
+    <ol>
+    <li><a href="#2-1"><code>&lt;body&gt;</code> element</a></li>
+    <li><a href="#2-2"><code>&lt;header&gt;</code> section</a></li>
+    <li><a href="#2-3">Navigation</a></li>
+    <li><a href="#2-4"><code>&lt;article&gt;</code> element</a></li>
+    <li><a href="#2-5"><code>&lt;footer&gt;</code> section</a></li>
+    </ol>
+</li>
+<li><a href="#3">Text-level semantics</a>
+    <ol>
+    <li><a href="#3-1">Links</a></li>
+    <li><a href="#3-2">Emphasized and strong text</a></li>
+    <li><a href="#3-3"><code>&lt;mark&gt;</code> element</a></li>
+    <li><a href="#3-4"><code>&lt;ins&gt;</code> and <code>&lt;del&gt;</code> elements</a></li>
+    <li><a href="#3-5">Other text-level elements</a></li>
+    </ol>
+</li>
+<li><a href="#4">Code and code highlighting</a></li>
+<li><a href="#5">Lists</a>
+    <ol>
+    <li><a href="#5-1">Ordered lists</a></li>
+    <li><a href="#5-2">Unordered lists</a></li>
+    <li><a href="#5-3">Definition lists</a></li>
+    </ol>
+</li>
+<li><a href="#6">Blockquotes</a></li>
+<li><a href="#7">Images</a></li>
+<li><a href="#8">Tables</a></li>
+<li><a href="#9">Typical <code>&lt;footer&gt;</code> content</a>
+    <ol>
+    <li><a href="#9-1">Small text</a></li>
+    <li><a href="#9-2">Address</a></li>
+    </ol>
+</li>
+</ol>
+</nav>
+
+<aside>This is <code>&lt;aside&gt;</code> element. You can style it in your CSS or uncomment  to hide it. Add more content here and/<wbr>or move <code>&lt;nav&gt;</code> element here if you want to use your <code>&lt;aside&gt;</code> as a full scale sidebar.</aside>
+
+<article>
+
+<h1>CSS Proving Ground</h1>
+
+<p id="1">CSS Proving ground is a special webpage where you can test your <abbr title="Cascading Style Sheet">CSS</abbr>. It intended to house all modern HTML5 elements you can spot in the wild in their natural habitat. So it could become a good help for any CSS check-list or even replace one completely.</p>
+
+<p>To achieve such ambi&shy;tious goal this page is filled with the real-life text (and not your usual &ldquo;<i>Lorem Ipsum</i>&rdquo;) littered with the HTML5 elements. Markup and page seman&shy;tics both used as close to the current real-life cases as possible yet seman&shy;tically correct.</p>
+
+<h2 id="2">Page Structure</h2>
+
+<p>In this section I will describe the structure of the most typical HTML5 web&shy;page with <code>&lt;header&gt;</code> section for the website title and (optionally) description, ads and some other data; two navi&shy;gation elements; <code>&lt;aside&gt;</code> element; one <code>&lt;article&gt;</code> section, where all the actual content of the page goes; and a footer with the copy&shy;right note, con&shy;tacts and such. Please note the first occurrence of the second-level heading just above this para&shy;graph.</p>
+
+<h3 id="2-1">BODY Element</h3>
+
+<p>On this page <code>&lt;body&gt;</code> is the only wrapping element for the docu&shy;ment sections like header, article and footer. For compara&shy;tively simple pages this is the best choice. You can set page-level width and margins right to it. However, if you are going to use multiple side&shy;bars, or other blocks, you would probably need some kind of <code>&lt;div id="<span class="string">wrapper</span>"&gt;</code>.</p>
+
+<p>Also, take a note of the first occurrence of the third-level heading.</p> 
+
+<h3 id="2-2">HEADER Element</h3>
+
+<p><code>&lt;header&gt;</code> element of this page contains only title of the page in plain text. Style it as is or put your own graphics and/<wbr>or custom HTML code. If you don't need it, just un&shy;comment <code><span class="keyword">header</span> {&nbsp;<span class="keyword">display</span>: <span class="string">none</span>;&nbsp;}</code> CSS dirrec&shy;tive to hide it.</p> 
+
+<h3 id="2-3">Navigation</h3>
+
+<p>The role of navi&shy;gation in this page is played by the two <code>&lt;nav&gt;</code> ele&shy;ments. One of the class <code>.top</code> in the be&shy;ginning of the page and one of the class <code>.bottom</code> in the bot&shy;tom of the page, right be&shy;fore the <code>&lt;footer&gt;</code>. Those ele&shy;ments contain the table of con&shy;tents struc&shy;tu&shy;red in ordered lists&nbsp;&mdash; nested one into the other.</p>
+
+<p>Feel free to replace those ordered lists with your own navi&shy;gation or turn the display of one or both of them on or off by commenting out or un&shy;commenting respective  <code>{&nbsp;<span class="keyword">display</span>: <span class="string">none</span>;&nbsp;}</code> dir&shy;rec&shy;tive.</p>
+
+<h3 id="2-4">ARTICLE Element</h3>
+
+<p>The main content of the page is encapsu&shy;lated into the single <code>&lt;article&gt;</code> ele&shy;ment. Keeping the content in a single ele&shy;ment makes it seman&shy;tically meaning&shy;ful. This is much more use&shy;ful than just ran&shy;domly ID&apos;d <code>&lt;div&gt;</code>:</p>
+
+<ul>
+	<li>Developers can easily style the con&shy;tent of the &lt;article&gt; other way than the rest of the page</li>
+	<li>Search engines get the hint what text is the page&apos;s con&shy;tent and what is navi&shy;gational, aside, etc.</li>
+	<li>Users can reliably use Safari brow&shy;ser <em>Reader</em> fea&shy;ture and si&shy;mi&shy;lar soft&shy;ware</li>
+</ul>
+
+<h3 id="2-5">FOOTER Section</h3>
+
+<p>This is simple. I put the copy&shy;right notice and email add&shy;ress here. If you want to style intri&shy;cate, multi&shy;column footer, put your divs into the <code>&lt;footer&gt;&lt;/footer&gt;</code>.</p>
+
+<h2 id="3">Text-level Semantics</h2>
+
+<p>In this part of the CSS Proving Ground the va&shy;rious inline ele&shy;ments will be tested. All those <code>&lt;i&gt;</code>, <code>&lt;strong&gt;</code> and some rarely used or new ones like <code>&lt;mark&gt;</code>. But as a star&shy;ter point I want to focus your atten&shy;tion on the essence of the World Wide Web&nbsp;&mdash; the links.</p>
+
+<h3 id="3-1">Links</h3>
+
+<p>Links is the glue that holds the <a href='http://en.wikipedia.org/wiki/World_Wide_Web' title='World Wide Web'>Web</a> toge&shy;ther. With&shy;out them it would be just a pile of <a href='http://en.wikipedia.org/wiki/Html' title='HyperText Markup Language'>HTML</a> files. Even worse, <a href='https://www.google.com' title='Google'>search engines</a> would hardly able to do their tre&shy;men&shy;dous jobs right with&shy;out links.</p>
+
+<p>Note that the first two links in the above para&shy;graph are using <a href='http://en.wikipedia.org/wiki/HTTP' title='Hypertext Transfer Protocol'>HTTP</a> pro&shy;to&shy;col and the third one is using its en&shy;crypted ver&shy;sion&nbsp;&mdash; <a href='https://www.google.com/%23q=HTTPS' title='HTTPS Google search'>HTTPS</a>. With <a href='http://en.wikipedia.org/wiki/CSS' title='Cascading Style Sheets'>CSS</a> you can style them diffe&shy;rently if you want. </p>
+
+<p>If your web&shy;site has a lot of links to <a href='ftp://ftp.mozilla.org/pub/firefox/releases/README' title='File, stored on the FTP server'>files</a>, stored on <a href='ftp://ftp.mozilla.org/pub/' title='FTP server for Mozilla project'>some FTP ser&shy;ver</a>, you may want to add some vi&shy;sual feature to such links to dis&shy;tin&shy;guish them from the common, HTTP ones.</p>
+
+<p>Diffe&shy;rent pro&shy;to&shy;cols are not the only thing that makes links diffe&shy;rent. Their desti&shy;nation could differ too. Some links can send you <a href='http://www.urbandictionary.com/define.php?term=outside' title='Outbound link'>out&shy;side</a>, and some&nbsp;&mdash; through the diffe&shy;rent parts of the same page, like <a href='%23top_navigation' title='Back to to part of this page'>back to the navi&shy;gation</a> or <a href='page_structure'>to another part of the article</a>.</p>
+
+<p>A little hint: clean your browser <em>His&shy;tory</em> to test vi&shy;sited and unvi&shy;sited links pro&shy;perly.</p>
+
+<h3 id="3-2">Emphasized and Strong Text</h3>
+
+<p>As <a href='http://www.w3.org/TR/html51/' title='W3C: HTML 5.1'>the HTML5 specifi&shy;cation</a> suggests, <code>&lt;em&gt;</code> ele&shy;ment should be used to gra&shy;phi&shy;cally show the text that is <em>stressed</em>. and the <code>&lt;strong&gt;</code> ele&shy;ment should be used to mark the <strong>impor&shy;tant</strong> parts of the text. Both these ele&shy;ments are meant to push reader&apos;s atten&shy;tion closer to the affected text. The diffe&shy;rence bet&shy;ween them, however, is that the former is tel&shy;ling the user <em>to read the marked text diffe&shy;rently</em> and the latter is tel&shy;ling the user <strong>to put more atten&shy;tion to the marked text</strong>.</p>
+
+<p>Usually, the <code>&lt;em&gt;</code> ele&shy;ment is styled with the <code><span class="keyword">font-style</span>: <span class="string">italic</span>;</code>, and the <code>&lt;strong&gt;</code> element is styled with <code><span class="keyword">font-weight</span>: <span class="string">bold</span>;</code> CSS directives. If you want to style some words with <i>itali&shy;cized</i> or <b>bold</b> font, but do not intend to draw any seman&shy;tically-driven atten&shy;tion to them, use <code>&lt;i&gt;</code> and <code>&lt;b&gt;</code> res&shy;pec&shy;tively. Usage of <code>&lt;u&gt;</code> ele&shy;ment as well as under&shy;lining words that are not links should be avoided.</p>
+
+<h3 id="3-3">MARK Element</h3>
+
+<p><code>&lt;mark&gt;</code> is the new ele&shy;ment brought into the Hyper&shy;Text with its fifth ver&shy;sion. It could be used <mark>to high&shy;light some text</mark> as you do it with the brightly colo&shy;red mar&shy;kers in the real life. Usually, it is styled with bright back&shy;ground and maybe dar&shy;ker text.</p>
+
+<h3 id="3-4">INS and DEL Elements</h3>
+
+<p><code>&lt;ins&gt;</code> and <code>&lt;del&gt;</code> ele&shy;ments are great if you want to show the pro&shy;cess of work on your docu&shy;ment. They are great for blog posts <ins datetime="2013-04-13">and published drafts</ins>, because you can visu&shy;ally dis&shy;tin&shy;guish newly added parts from the ori&shy;ginal text of the article <del datetime="2013-04-13">and parts that ori&shy;ginaly were the parts of the article but was consi&shy;dered for removal due to in&shy;accuracy or any other reason</del>.</p>
+
+<p>To make them even more useful, add a <code>datetime</code> attri&shy;bute to them to help with ver&shy;sion tracking <ins datetime="2013-04-13">and/or keeping a timeline of the document workflow</ins>.</p>
+
+<h3 id="3-5">Other Text-level Elements</h3>
+
+<p>There is a bunch of other ele&shy;ments that could be used on a common web&shy;page. </p>
+
+<p><code>&lt;abbr&gt;</code> is the <abbr title="HyperText Markup Language">HTML</abbr> tag that comes in handy when you need to make abbre&shy;vi&shy;ations littered text more suit&shy;able for the gene&shy;ral audi&shy;ence. It should go with the <code><span class="keyword">title</span>=<span class="string">""</span></code> attri&shy;bute. </p>
+
+<p><code>&lt;kbd&gt;</code> and <code>&lt;samp&gt;</code> tags are often used to dis&shy;play user input and com&shy;puter out&shy;put respec&shy;tively. Like in the following example: <q>If you will press <kbd><kbd>Alt</kbd>+<kbd>F4</kbd></kbd>, program will ask you <samp>Are you sure you want to close this window?</samp></q> Take a note that this example is en&shy;closed in inline quota&shy;tion tag&nbsp;&mdash; <code>&lt;q&gt;</code>.</p>
+
+<p>Sometimes you will need to use shortened ordi&shy;nal num&shy;bers like 1<sup>st</sup> for &ldquo;first&rdquo;, 2<sup>nd</sup> for &ldquo;second&rdquo;, 3<sup>rd</sup> for the &ldquo;third&rdquo;, and so on. This is when you will need the <code>&lt;sup&gt;</code> ele&shy;ment. Styling it with style, how&shy;ever, could be <a href='http://webdesignandsuch.com/how-to-fix-sup-sub-line-height-problem-with-css/' title='How to fix Sup Sub line-height problem with CSS'>a little bit tricky</a>.</p>
+
+<p>If you are one of those whose blood mostly con&shy;sists of C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, and one of those who put C<sub>2</sub>H<sub>6</sub>O away until it is time to cele&shy;brate the success, you will need the sub&shy;script ele&shy;ment&nbsp;&mdash; <code>&lt;sub&gt;</code>.</p>
+
+<h2 id="4">Code and Code Highlighting</h2>
+
+<p>The proper styling of <code>code</code> is very important for every&shy;one who write about com&shy;puter pro&shy;gramming or sys&shy;tem admi&shy;nistra&shy;tion. If you just paste chunks of code into your copy it would look horrible and will be barely read&shy;able. Even the most beauti&shy;ful code could be bro&shy;ken by the use of variable width font and erratic inden&shy;tation.</p>
+
+<p>Here is example of Python script where the key&shy;words, strings, vari&shy;ables and comments are en&shy;closed in the <code>&lt;span&gt;</code> ele&shy;ments. Classes of those ele&shy;ments are: <code>.keyword</code>, <code>.string</code>, <code>.var</code>, and <code>.comment</code>. The code is a simple Fibo&shy;nacci gene&shy;rator by <a href="http://stackoverflow.com/users/308903/joaquin">joaquin</a>.</p>
+
+<pre><code><span class="comment"># one space will separate better visually question and entry in console</span>
+<span class="var">numbers</span> = <span class="keyword">raw_input</span>("<span class="string">How many numbers would you like to display > "</span>)    
+
+<span class="comment"># In a robust program you should use try/except to catch wrong entries
+# Note the number you enter should be &gt; 2: you print 0,1 by default</span>
+<span class="var">numbers</span> = <span class="keyword">int</span>(<span class="var">numbers</span>)  
+
+<span class="var">a</span>, <span class="var">b</span> = <span class="string">0</span>, <span class="string">1</span>        <span class="comment"># tuple assignation</span>
+                   <span class="comment"># note fibonaci is 0,1,1,2,3...</span>
+
+<span class="keyword">print</span> <span class="var">a</span>            <span class="comment"># you can write this as print "%i\n%i" % (a, b)</span>
+<span class="keyword">print</span> <span class="var">b</span>            <span class="comment"># but I think several prints look better in this particular case</span>
+
+<span class="keyword">for</span> <span class="var">d</span> <span class="keyword">in</span> <span class="keyword">range</span>(<span class="var">numbers</span> - <span class="string">2</span>):  <span class="comment"># you already printed 2 numbers, now print 2 less</span>
+
+    <span class="var">c</span> = <span class="var">a</span> + <span class="var">b</span> 
+    <span class="keyword">print</span> <span class="var">c</span>
+    <span class="var">a</span>, <span class="var">b</span> = <span class="var">b</span>, <span class="var">c</span>    <span class="comment"># value swapping</span>
+                   <span class="comment"># A sorter alternative for this three lines would be:
+                   # `a, b = b, a + b`
+                   # `print b` </span></code></pre>
+
+<h2 id="5">Lists</h2>
+
+<p>When writing for the Web, the thoughts you are going to bring to your audi&shy;ence should be as much struc&shy;tured as pos&shy;sible. In elec&shy;tronic world white&shy;space is in abun&shy;dance cause it doesn&apos;t take any space (nei&shy;ther in sto&shy;rage nor in net&shy;work cables) at all. So if you have to say three dif&shy;ferent things or more, say with the list.</p>
+
+<h3 id="5-1">Ordered Lists</h3>
+
+<ol>
+	<li>Ordered lists could be styled in many ways:
+		<ol>
+			<li>As a decimal value</li>
+			<li>As a latin alpha&shy;bet symbol
+				<ol>
+					<li>Uppercase</li>
+					<li>Lowercase</li>
+				</ol></li>
+			<li>As a roman number
+				<ol>
+					<li>Uppercase</li>
+					<li>Lowercase</li>
+				</ol></li>
+		</ol></li>
+	<li>You can set the <code>start</code> attri&shy;bute to spe&shy;cify from which num&shy;ber (or letter) should item count go</li>
+	<li>You can set <code>re&shy;versed</code> attri&shy;bute if you want your ordered list items num&shy;bered from the greatest num&shy;ber to the lowest one</li>
+	<li>You can set specific number to a <code>&lt;li&gt;</code> ele&shy;ment through the <code>value</code> attribute.</li>
+</ol>
+
+<h3 id="5-2">Unordered Lists</h3>
+
+<ul>
+	<li>Unordered lists are much simpler than the ordered ones, but they a as well much more ver&shy;satile: 
+		<ul>
+			<li>You can use unordered list for building drop-down menus… </li>
+			<li>…picture galleries…</li>
+			<li>…search results lists…</li>
+			<li>…and many more</li>
+		</ul></li>
+	<li>You can style the list items with diffe&shy;rent list item markers or <em>bullets</em>: 
+		<ul>
+			<li>circle</li>
+			<li>disc</li>
+			<li>square</li>
+			<li>you can even hide the marker away</li>
+		</ul></li>
+	<li>Sometimes even pretty long para&shy;graphs look good being the list items, but it is better to keep to the rule of thumb that the longest list item shouldn&apos;t be longer than a three or four lines of text</li>
+</ul>
+
+<h3 id="5-3">Definition lists</h3>
+
+<p><code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code> and <code>&lt;dd&gt;</code> are pro&shy;bably the least used HTML tags ever. However they are the per&shy;fect choice when you need to list some <strong>key-value pairs</strong> on your page. </p>
+
+<dl>
+    <dt>HTTP</dt>
+        <dd>HyperText Transfer Protocol</dd>
+    <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+    <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+    <dt>WWW</dt>
+        <dd>World Wide Web</dd>
+    <dt>One very-very long definition term</dt>
+        <dd>Every very-very long defi&shy;ni&shy;tion term should have an even longer defi&shy;ni&shy;tion de&shy;scrip&shy;tion. Like this one which is span&shy;ning across the seve&shy;ral lines even if your line length is greater than a 100&ndash;130 cha&shy;rac&shy;ters (this value consi&shy;dered to be the lon&shy;gest for any human-readable docu&shy;ment)</dd>
+</dl>
+
+<h2 id="6">Blockquotes</h2>
+
+<figure>
+
+<blockquote cite="http://www.w3.org/TR/html51/grouping-content.html#the-blockquote-element"><p>The con&shy;tent of a block&shy;quote may be abbrevi&shy;ated or may have con&shy;text added in the con&shy;ven&shy;tional man&shy;ner for the text's lan&shy;guage.</p>
+<blockquote><p>For example, in English this is tradi&shy;tional&shy;ly done using square bra&shy;ckets. Con&shy;sider a page with the sen&shy;tence &ldquo;Fred ate the cra&shy;cker. He then said he liked apples and fish.&rdquo;; it could be quoted as follows:</p>
+<pre><code>&lt;blockquote&gt;
+    &lt;p&gt;[Fred] then said he liked [...] fish.&lt;/p&gt;
+&lt;/blockquote&gt;</code></pre>
+</blockquote>
+<p>Attribution for the quo&shy;tation, if any, must be placed out&shy;side the block&shy;quote element.</p></blockquote>
+
+<figcaption>From <cite>the W3C's HTML 5.1 specification</cite></figcaption>
+
+</figure>
+
+<h2 id="7">Images</h2>
+
+<figure>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAABkCAMAAABtn74RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRFAAAA////pdmf3QAAAc5JREFUeNrs24tOwjAAhtG/7//SGo3Q9WJRtqSQc2Ii4pwVPtvZYAKXKHA6YSEshIWwPAgIC2EhLBAWwkJYsG1YKmXWwpNt5Oxx3cYzGFjaMQt727DSx5G/1JOTmks7ntHAsj6GPcLKs9POSc9r2vH0A/scd1bHsF9YP6+oqT7f3nN/zU11a3D+wVd9fzBduVKmYaX7BRDWa4U1nj1S3ZPSH5f5DNZ9n0ynyHt63Vs9uDqpwzG8UFgpw7Ca2eWxsLJYduvuumgyXCiF9Y5hpZ5iZudvz/jL61cfWQEthe8fVuYzVvXXW4YnLMIS1j/Daj6V8lxYg6VQWLuHddwTeuTi/esZzeIaaxjWqqwsbhze2cfaPKwy2Deodgeq7YXxNVZpL5uq66jbvkN9wkli/Wb64SIu7XDGPwz7hLU63CPGBWHpirPD8r+tXLgUgrAQFsICYSEshAXCQlgIC4SFsBAWCAthISwQFsJCWCAshIWwQFgIC2GBsBAWwgJhISyEBcJCWAgLhIWwEBYIC2EhLIQlLISFsBAWCAthISwQFsJCWCAshIWwQFgIC2GBsBAWwgJhISyEBcJCWAgLhIWwEBYIC2EhLBAWe4UFF/gQYADwU+Njp3sSfAAAAABJRU5ErkJggg==" width="600" height="100" alt="600x100 PNG Base64 encoded" title="600x100 PNG Base64 encoded" class="aligncenter" />
+<figcaption>This is example of a centered image (<code><span class="keyword">class</span>="<span class="string">aligncenter</span>"</code>) enclosed into the <code>&lt;figure&gt;</code> tag. This text runs inside <code>&lt;figcaption&gt;</code> element.</figcaption>
+</figure>
+
+<p>To make this file more easy to work with I have embeded Base64 encoded images into it. They are small, anyway. And this way you won't need to wory about any <code>.png</code> or <code>.gif</code> files&nbsp;&mdash; only one single <code>.html</code>.</p>
+
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAD6CAMAAAAss4rBAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRFAAAA////pdmf3QAAAlRJREFUeNrs2olugkAUBdDL//90TROUWVgErFTPjSHaIs6cWfI0JPJEBtkYWLBgwYIFS2DBggULFiyBBQsWLFiwBBYsWLBgwRJYV8D6xFFY6tPB/ua0FqZqT9Ow8TaEx/0ILxmrhYum7XCeEckpjikO6TYs4zELbX8pVo5OjzMbm0Yk8+ec0Pb9WOPknpxb/+VxO87kWW9Bte/atGy6WNXHXASrmSzl2qiety+bmZbeOlvoYe4W00fZuEz2t5SL8q1YGbpYZcM3YmV1Joybd4t1O6QZx/wjrMnKmv+s+oprt9VlmFl96fNfaRkuYGV+Zt3Hve1j9m7w6a/rz8Cq/pXhGFZ6LO/AKuuaLRv8bzOzsmd1sYbsqrPqTb5z7p9X8GnL6bJU6O9ZQ70NpSjGU5cOCwVHv4KfjNCjKMkLv20duOj3fQPfj/WFv1bswvrW2+f9ngULFixYsAQWLFiwYMESWLBgwYIFS2DBggULFiyBBQsWLFiwBBYsWLBgwRJYsGDBggVLYMGCBQsWLIEFCxYsWLAEFixYsGDBEliwYMGCBUtgwYIFCxYsgQULFixYsAQWLFiwYMESWLBgwYIFS2DBggULFiyBBQsWLFiwBBYsWLBgwRJYsGDBggVLYMGCBQsWLIEFCxYsWLAEFixYsGDBEliwYMGCBUtgwYIFCxYsgQULFixYsAQWLFiwYMESWLBgwYIFS2DBggULFiyBBQsWLFiwBBYsWLBgwRJYsGDBggVLYMGCBQsWLIEFCxYsWLAEFixYsGDBEliwYF0BSzbnR4ABAHP3HzabM4o5AAAAAElFTkSuQmCC" width="300" height="250" alt="300x250 PNG aligned to the right" title="300x250 PNG aligned to the right" class="alignright">
+
+<p>There are two images here. One is the wide 600x100 pixels one. This size is the mini&shy;mal size for posting a photos on your blog. If your design implies greater width for the photos, re&shy;place the value of <code><span class="keyword">width</span>="<span class="string">600</span>"</code> attri&shy;bute with de&shy;sired value.</p>
+
+<p>The next two images are 300 pixels in width and 250 pixels in heights. They were put here to test <code>.alignright</code> and <code>.alignleft</code> classes. So the first short image should be aligned to the right side of the text column, and the second one should be aligned to the left side of the text column.</p>
+
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAD6CAMAAAAss4rBAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRFAAAA////pdmf3QAAAlRJREFUeNrs2olugkAUBdDL//90TROUWVgErFTPjSHaIs6cWfI0JPJEBtkYWLBgwYIFS2DBggULFiyBBQsWLFiwBBYsWLBgwRJYV8D6xFFY6tPB/ua0FqZqT9Ow8TaEx/0ILxmrhYum7XCeEckpjikO6TYs4zELbX8pVo5OjzMbm0Yk8+ec0Pb9WOPknpxb/+VxO87kWW9Bte/atGy6WNXHXASrmSzl2qiety+bmZbeOlvoYe4W00fZuEz2t5SL8q1YGbpYZcM3YmV1Joybd4t1O6QZx/wjrMnKmv+s+oprt9VlmFl96fNfaRkuYGV+Zt3Hve1j9m7w6a/rz8Cq/pXhGFZ6LO/AKuuaLRv8bzOzsmd1sYbsqrPqTb5z7p9X8GnL6bJU6O9ZQ70NpSjGU5cOCwVHv4KfjNCjKMkLv20duOj3fQPfj/WFv1bswvrW2+f9ngULFixYsAQWLFiwYMESWLBgwYIFS2DBggULFiyBBQsWLFiwBBYsWLBgwRJYsGDBggVLYMGCBQsWLIEFCxYsWLAEFixYsGDBEliwYMGCBUtgwYIFCxYsgQULFixYsAQWLFiwYMESWLBgwYIFS2DBggULFiyBBQsWLFiwBBYsWLBgwRJYsGDBggVLYMGCBQsWLIEFCxYsWLAEFixYsGDBEliwYMGCBUtgwYIFCxYsgQULFixYsAQWLFiwYMESWLBgwYIFS2DBggULFiyBBQsWLFiwBBYsWLBgwRJYsGDBggVLYMGCBQsWLIEFCxYsWLAEFixYsGDBEliwYF0BSzbnR4ABAHP3HzabM4o5AAAAAElFTkSuQmCC" width="300" height="250" alt="300x250 PNG aligned to the left" title="300x250 PNG aligned to the left" class="alignleft">
+
+<p>This paragraph inten&shy;tionally made shorter than the original height of the left aligned image so the CSS of this quirky flow could be tested.</p>
+
+<h2 id="8">Tables</h2>
+
+<p>Tables could be really tricky to style. Try this one.</p>
+
+<table>
+    <caption>Table 1. Number of fruits eaten daily (on average)</caption>
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th rowspan="2">Red apples</th>
+            <th rowspan="2">Green apples</th>
+            <th rowspan="2">Pome&shy;gra&shy;nates</th>
+            <th rowspan="2">Tan&shy;ge&shy;rines</th>
+            <th colspan="2">Ecua&shy;dorian ba&shy;na&shy;nas</th>
+        </tr>
+        <tr>
+            <th>Rotten</th>
+            <th>Fresh</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Red panda</th>
+            <td>18</td>
+            <td>12</td>
+            <td>8</td>
+            <td>3</td>
+            <td>do not feed</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th>Indian ele&shy;phant</th>
+            <td>32</td>
+            <td>21</td>
+            <td>23</td>
+            <td>do not feed</td>
+            <td>56</td>
+            <td>87</td>
+        </tr>
+        <tr>
+            <th>Magic uni&shy;corn</th>
+            <td>do not feed</td>
+            <td>do not feed</td>
+            <td>4830</td>
+            <td>3458</td>
+            <td>4320</td>
+            <td>5467</td>
+        </tr>
+    </tbody>
+</table>
+
+</article>
+
+<footer id="9">
+
+<p id="9-1"><small>CSS Proving Ground by Vitali Kovalenko is licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attri&shy;bution 3.0 Li&shy;cense</a>. It means that you can use it for your own stuff not matter if it per&shy;so&shy;nal or com&shy;mercial. You can change it how&shy;ever you like. Share it with any&shy;body and, in gene&shy;ral, do any&shy;thing you want. “Attri&shy;bution” means that you need to give a credit some&shy;how. A simple link to <code>http://vitalikovalenko.com</code> would be nice.</small></p>
+
+<p id="9-2"><address><strong>CSS Proving Ground</strong> is brought to you by Vitali Kovalenko. I hope it will help you to build better CSS fas&shy;ter. If you have any feed&shy;back please con&shy;tact me by email: <code>vk@vk7.org</code>. Keep an eye on up&shy;coming up&shy;dates on <a href="http://vitalikovalenko.com/files/html/css-proving-ground.html">the CSS PG page</a> on <a href="http://vitalikovalenko.com">my website</a></address></p>
+
+</footer>
+
+</body>
+</html>
